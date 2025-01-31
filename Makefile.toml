@@ -1,9 +1,11 @@
-# install it with `cargo install cargo-make` if you don't have it
-# then run `cargo make build-web`
+# install it with `cargo install cargo-make` if you don't have it then run `cargo make build-<target>`
+
+# build the pkg for vanila js
 [tasks.build-web]
 command = "wasm-pack"
 args = ["build", "--target", "web"]
 
+# build the pkg for webpack, vite, rollup and npm
 [tasks.build-bundle]
 command = "wasm-pack"
 args = ["build", "--target", "bundler"]
