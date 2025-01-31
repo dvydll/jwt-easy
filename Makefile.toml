@@ -1,0 +1,9 @@
+# install it with `cargo install cargo-make` if you don't have it
+# then run `cargo make build-web`
+[tasks.build-web]
+command = "wasm-pack"
+args = ["build", "--target", "web"]
+
+[tasks.build-bundle]
+command = "wasm-pack"
+args = ["build", "--target", "bundler"]

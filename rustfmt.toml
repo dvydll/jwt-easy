@@ -1,0 +1,5 @@
+tab_spaces = 2               # Usa una indentación de 2 espacios
+max_width = 80               # Máximo de 80 caracteres por línea
+newline_style = "Unix"       # Agregar un salto de línea final al archivo
+reorder_imports = true       # Reordenar los `use` automáticamente
+use_small_heuristics = "Max" # Permite que funciones y structs ocupen una sola línea
